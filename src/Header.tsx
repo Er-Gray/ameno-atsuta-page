@@ -19,21 +19,33 @@ const HeaderRight=styled.div`
 
 `;
 
-const HeaderList=styled.ul`
+const HeaderUl=styled.ul`
 	display:flex;
 	flex-wrap:nowrap;
 `;
 
+const HeaderLi=styled.li`
+
+`;
+
 const Header:React.FC=()=>{
+	const HeaderMenuList:React.FC=()=>{
+
+		return (
+			<HeaderUl>
+				<HeaderLi>ABOUT</HeaderLi>
+			</HeaderUl>
+		);
+	}
+
+
 	return(
 		<HeaderWrapper>
 			<HeaderLeft>
 				<AmenoLogo alt="ロゴ画像" />
 			</HeaderLeft>
 			<HeaderRight>
-				<HeaderList>
-
-				</HeaderList>
+				<HeaderMenuList/>
 				
 			</HeaderRight>
 		</HeaderWrapper>

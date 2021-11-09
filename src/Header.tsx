@@ -35,10 +35,26 @@ const HeaderLi=styled.li`
 
 const HeaderYTAndTw=styled.ul`
 	width:15%;
+	margin:-1% 0;
 `;
 
 const HeaderYTAndTwLi=styled.li`
 	width:100%;
+	list-style:none;
+	background-color:rgba(150,150,150,0.5);
+	margin:5% 0;
+	color:white;
+	font-size:1rem;
+`;
+
+const HeaderYTAndTwA=styled.a`
+		text-decoration: none;
+		height:40%;
+`;
+
+const HeaderLink=styled(Link)`
+		text-decoration: none;
+		height:100%;
 `;
 
 const Header:React.FC=()=>{
@@ -47,14 +63,14 @@ const Header:React.FC=()=>{
 		return (
 			<BrowserRouter>
 				<HeaderUl>
-					<HeaderLi><Link to="/about">ABOUT</Link></HeaderLi>
-					<Link to="/stream"><HeaderLi>STREAM</HeaderLi></Link>
-					<Link to="/history"><HeaderLi>HISTORY</HeaderLi></Link>
-					<Link to="/contact"><HeaderLi>CONTACT</HeaderLi></Link>
+					<HeaderLi><HeaderLink to="/about">ABOUT</HeaderLink></HeaderLi>
+					<HeaderLi><HeaderLink to="/stream">STREAM</HeaderLink></HeaderLi>
+					<HeaderLi><HeaderLink to="/history">HISTORY</HeaderLink></HeaderLi>
+					<HeaderLi><HeaderLink to="/contact">CONTACT</HeaderLink></HeaderLi>
 				</HeaderUl>
 				<HeaderYTAndTw>
-					<HeaderYTAndTwLi>Youtube</HeaderYTAndTwLi>
-					<HeaderYTAndTwLi>Twitter</HeaderYTAndTwLi>
+					<HeaderYTAndTwA href="#"><HeaderYTAndTwLi>Youtube</HeaderYTAndTwLi></HeaderYTAndTwA>
+					<HeaderYTAndTwA href="#"><HeaderYTAndTwLi>Twitter</HeaderYTAndTwLi></HeaderYTAndTwA>
 				</HeaderYTAndTw>
 			</BrowserRouter>
 		);

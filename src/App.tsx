@@ -1,5 +1,4 @@
 import React from 'react';
-import "./destyle.css";
 import {
   BrowserRouter,
   Switch,

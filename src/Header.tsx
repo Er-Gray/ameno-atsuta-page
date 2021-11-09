@@ -10,15 +10,19 @@ const HeaderWrapper=styled.div`
 
 const HeaderLeft=styled.div`
 	width:30%;
+	display:inline-block;
 `;
 
 const AmenoLogo=styled.img`
 	height:100%;
+	display:inline-block;
 `;
 
 const HeaderRight=styled.div`
 	display:flex;
 	justify-content:flex-end;
+	width:70%;
+	margin:0 0 0 auto;
 `;
 
 const HeaderUl=styled.ul`
